@@ -3,6 +3,9 @@ const numberOfBadNames = parseInt(takenNames.length);
 const givenNumber = process.argv;
 const topNumber = parseInt(process.argv[2]) +1;
 
+console.log(`
+Thank you very much. I will now count up to `+(topNumber-1))
+
 
 //Check if the name is already reserved
 const nameOk = name => {
@@ -62,9 +65,8 @@ for (j = 3; givenNumber[j]; j++) {
   //Add name to list
   takenNames.push(name);
 
-  console.log(
-    `
-  Number ` +
+  console.log(`
+Number ` +
       process.argv[j] +
       ` will now be known as ` +
       name +
