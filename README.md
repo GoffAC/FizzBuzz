@@ -16,6 +16,8 @@ You can put as many numbers as you like (realistically 441) afterwards and they 
 
 It works by generating a random name, then checks the name isn't used, then plays FizzBuzz with that name.
 
+![Image of Terminal Running](./demo.png)
+
 The script will only return Consonant beginning words. I want non-sensical words but not unpronouncable ones - Xuzz is borderline.
 
 One word of warning, Jizz was a possible name. If you see any more slightly suspect words, just place them into the taken names array and they will no longer appear. You could also put Xuzz and Xizz in there if you like. 

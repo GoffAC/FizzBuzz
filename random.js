@@ -1,7 +1,8 @@
-let takenNames = ["Jizz","Wizz"];
+let takenNames = ["Jizz"];
 const numberOfBadNames = parseInt(takenNames.length);
 const givenNumber = process.argv;
-const topNumber = process.argv[2];
+const topNumber = parseInt(process.argv[2]) +1;
+
 
 //Check if the name is already reserved
 const nameOk = name => {
@@ -74,10 +75,10 @@ for (j = 3; givenNumber[j]; j++) {
 //Play FizzBuzz
 for (i = 1; i < topNumber; i++) {
   let output = "";
-  for (j = 2; j < process.argv.length; j++) {
+  for (j = 3; j < process.argv.length; j++) {
     if (i % givenNumber[j] === 0) {
-      let k = numberOfBadNames + j - 3;
-    //   console.log(`NoB `+numberOfBadNames+` k is ` + k + `; taken is ` + takenNames[k]+`taken also `+takenNames);
+      let k = j - 3 + numberOfBadNames;
+    //   console.log(`j is `+j+` k is ` + k + `; taken is ` + takenNames[k]+`taken also `+takenNames);
       output = output + takenNames[k];
     }
   }
