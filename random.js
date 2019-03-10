@@ -85,7 +85,7 @@ for (i = 1; i < topNumber; i++) {
     }
   }
   //check if blank
-  if (typeof output === "undefined" || output === "") {
+  if (output === "") {
     output = i;
     console.log(output);
   } else if (typeof output === "string") {
